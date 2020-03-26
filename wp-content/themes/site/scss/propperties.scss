@@ -1,0 +1,22 @@
+//@mixin box-sizing($type: border-box) {
+//  -webkit-box-sizing: $type;
+//  -moz-box-sizing: $type;
+//  box-sizing: $type;
+//}
+
+@mixin opacity($opacity: 0.5) {
+  opacity: $opacity;
+  filter: alpha(opacity=($opacity * 100));
+}
+
+@mixin border-radius($value: 3px) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin box-shadow( $setting: 10px 10px 0px 0px #000000 ) {
+  -webkit-box-shadow: $setting;
+  -moz-box-shadow: $setting;
+  box-shadow: $setting;
+}
